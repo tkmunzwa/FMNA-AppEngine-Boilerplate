@@ -1,0 +1,14 @@
+This is a basic implementation of an FMNA (ForgetMeNotAfrica) eTXT client in 
+for Django on Google App Engine (django-nonrel).
+
+I have intentionally excluded django-nonrel files from this repo, in order to 
+minimize repo size and to avoid having to pull in updates from upstream. In 
+order to get this project running: 
+1) Clone/download. Assumption is you have GAE SDK configured already
+2) follow instructions at [insert URL] so that the following django-nonrel
+ folders/symlinks are in the app folder: search, permission-backend_nonrel,
+ djangotoolbox, djangoappengine, dbindexer and autoload
+3) rename example-app.yaml to app.yaml & set details relevant for your app
+
+The default endpoint URL is http://yourapp.appspot.com/api/ProcessEtxtRequest - you can change this in urls.py. The example action
+ is to echo the message recieved
